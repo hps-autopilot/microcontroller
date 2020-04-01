@@ -6,7 +6,7 @@
 #include <PDM.h>
 
 #include <stdio.h>
-unsigned long time;
+unsigned long time1;
 
 void setup() {
   // put your setup code here, to run once:
@@ -39,8 +39,8 @@ void loop() {
 
   // put your main code here, to run repeatedly:
   delay(1000);
-  time = millis();
-  Serial.println(time);
+  time1 = millis();
+  Serial.println(time1);
   
   //pressure sensor
   float pressure = BARO.readPressure();
