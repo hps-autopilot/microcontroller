@@ -85,7 +85,7 @@ wxIMPLEMENT_APP(MyApp);
 
 bool MyApp::OnInit()
 {
-    frame = new MyFrame(wxT("LED Array"), wxPoint(), wxSize(2500,1800));
+    frame = new MyFrame(wxT("Single LED"), wxPoint(), wxSize(2500,1800));
     canvas = new MyCanvas(frame);
     frame->Show(true);
     return true;
