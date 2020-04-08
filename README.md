@@ -1,6 +1,6 @@
 # Human Powered Submarine Autopilot System
 
-Project Statement:
+Project Statement: Develop an autopilot system that could be implemented to control the roll of the human-powered submarine as it navigates through the water. This system would be composed of a prototype hardware module with a proof-of-concept vehicle orientation display, a data control loop, and the interface between hardware and software.
 
 ## Getting Started
 
@@ -30,8 +30,7 @@ The Arduino Libraries are:
 * Arduino_HTS221
 * Arduino_APDS9960
 
-The following URL provides instructions on how to download libraries on Arduino IDE.
-https://www.arduino.cc/en/guide/libraries
+The following URL provides instructions on how to download libraries on Arduino IDE. URL: https://www.arduino.cc/en/guide/libraries
 
 Congratulations! You've completed the set up and READY TO ROLL!
 
