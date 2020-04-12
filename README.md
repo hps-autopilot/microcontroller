@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Human Powered Submarine Autopilot System
 
 Project Statement: Develop an autopilot system that could be implemented to control the roll of the human-powered submarine as it navigates through the water. This system would be composed of a prototype hardware module with a proof-of-concept vehicle orientation display, a data control loop, and the interface between hardware and software.
@@ -87,3 +88,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Hat tip to anyone whose code was used
 * Inspiration
 * etc
+=======
+>>>>>>> parent of 68f5ff9... readme
