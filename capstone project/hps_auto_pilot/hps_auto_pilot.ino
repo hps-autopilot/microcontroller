@@ -83,13 +83,13 @@ void loop() {
   if (IMU.magneticFieldAvailable()) {
 
       IMU.readMagneticField(mag_x, mag_y, mag_z);
-      Serial.print(F("x: "));\
+      Serial.print(F("mag_x: "));\
       Serial.print(mag_x);
       Serial.print(" \t");
-      Serial.print(F("y: "));
+      Serial.print(F("mag_y: "));
       Serial.print(mag_y);
       Serial.print(" \t");
-      Serial.print(F("z: "));
+      Serial.print(F("mag_z: "));
       Serial.print(mag_z);
       Serial.println("uT");
   }
