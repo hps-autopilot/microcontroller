@@ -4,23 +4,26 @@ Project Statement: Develop an autopilot system that could be implemented to cont
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine.
 
 ### Prerequisites
 
-For this project, we chose to use ARDUINO NANO 33 BLE board. For it has multiple sensors to collect various types of data, and the capability to collect and process the data.
-
+For this project, we chose to use ARDUINO NANO 33 BLE board. For it has multiple sensors to collect various types of data at real time, and then process the data in our control algorithm.
 
 ### Installing
 
-First make sure to have Arduino installed on your computer. URL: https://www.arduino.cc/en/Main/Software
+First make sure to have `Arduino IDE` and `git` installed on your computer.
+
+* Click [here](https://www.arduino.cc/en/Main/Software) for `Arduino IDE` tutorial.
+* Click [here](https://dev.to/landonp1203/how-to-properly-set-up-git-on-your-computer-33eo) for `git` tutorial.
+å
 
 After installing, open a destination folder of where you want to store this project. Then open terminal and input the following code:
 ```
-git clone https://github.com/jxchen16/bah.git
+git clone https://github.com/hps-autopilot/microcontroller.git
 ```
 
-When you finished, go to capstone project folder, hps_auto_pilot, and open up hps_auto_pilot.ino file on Arduino software.
+When you finished, go to hps_capstone  folder, hps_auto_pilot, and open up `hps_auto_pilot.ino` file on Arduino software.
 
 In this project, we use some additional Arduino Libraries, which have to be installed manually.
 
@@ -30,7 +33,7 @@ The Arduino Libraries are:
 * Arduino_HTS221
 * Arduino_BLE
 
-The following URL provides instructions on how to download libraries on Arduino IDE. URL: https://www.arduino.cc/en/guide/libraries
+Click [here](https://www.arduino.cc/en/guide/libraries) if you need help downloading and installing the libraries on Arduino IDE.  
 
 Congratulations! You've completed the set up and READY TO ROLL!
 <!--
