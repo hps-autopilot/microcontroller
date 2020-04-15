@@ -33,13 +33,13 @@ void setup() {
     while (1);
   }
   if (!BLE.begin()) {
-    Serial.println("starting BLE failed!");
+    Serial.println("Failed to start BLE service!");
 
     while (1);
   }
   // initialize SD card connected to pin 10
   if (!SD.begin(10)) {
-    Serial.println("initialization failed!");
+    Serial.println("Failed to initialize SD card!");
     while (1);
   }
 
@@ -72,7 +72,7 @@ void loop() {
   
   // if a central is connected to peripheral:
   if (central) {
-  
+    Serial.println("connect successfully");
     // open text file named 'data.txt' for write
     // if file does not exist, it is created
     myFile = SD.open("data.txt", FILE_WRITE);
@@ -92,17 +92,14 @@ void loop() {
     
     while (central.connected()) {
       delay(1000);
-      Serial.println(sensorService.characteristicCount());
 
-      Serial.println("connect successfully");
-      
       //IMU
       if (IMU.accelerationAvailable()) {
         IMU.readAcceleration(x, y, z);
         
         //String concatenation 
         acc_data = String("Accelerometer: (") + String(x) + "," + String(y) + "," + String(z) + String(")");
-		//Print accelerometer data to SD card
+	     	//Print accelerometer data to SD card
         myFile.print(String(x) + "," + String(y) + "," + String(z) + ",");
         acc_data.toCharArray(acc_char, str_size);
         accelerometer.writeValue(acc_char);
@@ -111,7 +108,7 @@ void loop() {
       if (IMU.gyroscopeAvailable()) {
         IMU.readGyroscope(roll, pitch, yaw);
         gyro_data = String("Gyroscope: (") + String(roll) + "," + String(pitch) + "," + String(yaw) + String(")");
-		//Print gyroscope data to SD card
+		    //Print gyroscope data to SD card
         myFile.println(String(roll) + "," + String(pitch) + "," + String(yaw));
         gyro_data.toCharArray(gyro_char, str_size);
         gyroscope.writeValue(gyro_char);
@@ -119,7 +116,7 @@ void loop() {
     }
 
     // when the central disconnects, print it out:
-    Serial.print(F("Disconnected from central: "));
+    Serial.print("Disconnected from central: ");
     Serial.println(central.address());
   }
   myFile.close();
