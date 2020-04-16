@@ -12,8 +12,8 @@ BLEService sensorService("19B10000-E8F2-537E-4F6C-D104768A1214"); // BLE sensor 
 
 // BLE LED Switch Characteristic - custom 128-bit UUID, read and writable by central
 // two characteristics, one for accelerometer and one for gyroscope
-BLECharacteristic accelerometer("19B10000-E8F2-537E-4F6C-D104768A1215", BLENotify, "Accelerometer: (x_placeholder, y_placeholder, z_placeholder)");
-BLECharacteristic gyroscope("19B10000-E8F2-537E-4F6C-D104768A1216", BLENotify, "Gyroscope: (roll_placeholder, pitch_placeholder, yaw_placeholder)");
+BLECharacteristic accelerometer("19B10000-E8F2-537E-4F6C-D104768A1215", BLERead | BLENotify, "Accelerometer: (x_placeholder, y_placeholder, z_placeholder)");
+BLECharacteristic gyroscope("19B10000-E8F2-537E-4F6C-D104768A1216", BLERead | BLENotify, "Gyroscope: (roll_placeholder, pitch_placeholder, yaw_placeholder)");
 
 File myFile;
 
