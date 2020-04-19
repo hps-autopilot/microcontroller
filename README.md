@@ -16,14 +16,14 @@ First make sure to have `Arduino IDE` and `git` installed on your computer.
 
 * Click [here](https://www.arduino.cc/en/Main/Software) for `Arduino IDE` tutorial.
 * Click [here](https://dev.to/landonp1203/how-to-properly-set-up-git-on-your-computer-33eo) for `git` tutorial.
-å
+
 
 After installing, open a destination folder of where you want to store this project. Then open terminal and input the following code:
 ```
 git clone https://github.com/hps-autopilot/microcontroller.git
 ```
 
-When you finished, go to hps_capstone  folder, hps_auto_pilot, and open up `hps_auto_pilot.ino` file on Arduino software.
+When you finished, go to hps_capstone folder, hps_auto_pilot, and open up `hps_auto_pilot.ino` file on Arduino software.
 
 In this project, we use some additional Arduino Libraries, which have to be installed manually.
 
@@ -36,11 +36,10 @@ The Arduino Libraries are:
 Click [here](https://www.arduino.cc/en/guide/libraries) if you need help downloading and installing the libraries on Arduino IDE.  
 
 Congratulations! You've completed the set up and READY TO ROLL!
-<!--
+
 ## Running the tests
 
-Explain how to run the automated tests for this system
-
+This project is able to output the sensor data both  
 ### Break down into end to end tests
 
 Explain what these tests test and why
@@ -60,7 +59,7 @@ Give an example
 ## Deployment
 
 Add additional notes about how to deploy this on a live system
-
+<!--
 ## Built With
 
 * [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used

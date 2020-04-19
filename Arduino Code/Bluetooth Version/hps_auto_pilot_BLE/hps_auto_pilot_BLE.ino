@@ -77,6 +77,7 @@ void loop() {
         acc_data = String("Accelerometer: (") + String(x) + "," + String(y) + "," + String(z) + String(")");
         acc_data.toCharArray(acc_char, str_size);
         accelerometer.writeValue(acc_char);
+        Serial.println(acc_data);
       }
   
       if (IMU.gyroscopeAvailable()) {
@@ -84,6 +85,7 @@ void loop() {
         gyro_data = String("Gyroscope: (") + String(roll) + "," + String(pitch) + "," + String(yaw) + String(")");
         gyro_data.toCharArray(gyro_char, str_size);
         gyroscope.writeValue(gyro_char);
+        Serial.println(gyro_data);
       }
     }
 
