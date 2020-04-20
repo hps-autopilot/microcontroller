@@ -5,7 +5,7 @@
 
 #include <stdio.h>
 unsigned long timer;
-int delay_freq = 1000;
+int delay_freq = 1000; //change frequencies of output
 
 void setup() {
   // put your setup code here, to run once:
