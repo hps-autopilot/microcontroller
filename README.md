@@ -39,22 +39,18 @@ Congratulations! You've completed the set up and READY TO ROLL!
 
 ## Running the tests
 
-This project is able to output the sensor data both  
-### Break down into end to end tests
+This project is able to output the Arduino sensor data through Bluetooth Low Energy technology or Serial Port. In the `Arduino Code` folder, open the corresponding folder of whichever method you want to use to get the sensor data.
+One you opened the `.ino` file, then go to `Tools > Port >` and select the port that Arduino board is connected to. After you finished, you can upload to the Arduino Board by hit the circle with the right arrow on top of the Arduino IDE scree. Or press `cmd+U` for Mac.
 
-Explain what these tests test and why
+### BLE
+If you choose to use BLE technology to transmit the sensor data. Please installed [BlueSee](https://apps.apple.com/us/app/bluesee-ble-debugger/id1336679524?mt=12) for MacOS in the App Store.
 
-```
-Give an example
-```
+Once you've successful downloaded `BlueSee` and opened it up. Click the `Scan` button on the top left corner. Then you'd be able to see a `Arduino Sensors` in the `Name` Column. Right click on the Name and click `Connect` to build connection with the Arduino BLE. Then right click again, and click on open, to see the interface of connection. Click on the one service tag, with UUID `19B10000-E8F2-537E-4F6C-D104768A1214`. Then click both `HEX` sliders on the right side, when they turned to `ASCII`, you should be able to see the sensor data in String Characters. Like the example below:
+![BlueSee_example](./images/BlueSee_example.png)
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
+### Serial Port
+If you choose to use the Serial Port to received the Arduino sensor data. You can go to `Tools > Serial Monitor`, or `Shift + CMD + M` to open up the serial port screen and see the sensor data. Like the image displayed below.
+![sample serial port output](./images/sample_serial_output.png)
 
 ## Deployment
 
