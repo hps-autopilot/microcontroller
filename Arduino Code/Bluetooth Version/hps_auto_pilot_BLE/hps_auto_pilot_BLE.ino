@@ -35,7 +35,7 @@ void setup() {
   }
 
   //set name to for the board 
-  BLE.setLocalName("Adruino Sensors");
+  BLE.setLocalName("Arduino Sensors");
   BLE.setDeviceName("Arduino Sensors");
 
   BLE.setAdvertisedService(sensorService);
