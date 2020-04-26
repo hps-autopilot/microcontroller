@@ -8,6 +8,7 @@ using std::string;
 #endif
 
 #define _MSC_VER 1924
+#define SIZE     100
 
 class MyCanvas : public wxPanel
 {
@@ -66,7 +67,6 @@ void MyCanvas::OnPaint(wxPaintEvent& event)
     wxPaintDC dc(this);
     dc.SetPen(*wxBLACK);
     int i, j;
-    int size = 200;
     for (i = 0; i < ledDim; i++)
     {
         for (j = 0; j < ledDim; j++)
@@ -79,7 +79,7 @@ void MyCanvas::OnPaint(wxPaintEvent& event)
             {
                 dc.SetBrush(*wxRED);
             }
-            dc.DrawRectangle(size*j, size*i, size, size);
+            dc.DrawRectangle(SIZE*j, SIZE *i, SIZE, SIZE);
         }
     }
 }
