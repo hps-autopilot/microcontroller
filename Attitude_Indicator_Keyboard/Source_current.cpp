@@ -7,6 +7,8 @@ using std::string;
 #include <wx/wx.h>
 #endif
 
+#define _MSC_VER 1924
+
 class MyCanvas : public wxPanel
 {
 public:
