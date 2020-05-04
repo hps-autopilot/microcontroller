@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Source.cpp(11,1): warning C4005: '_MSC_VER': macro redefinition
+C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Source.cpp : message : see previous definition of '_MSC_VER'
+  Attitude_Indicator_Keyboard_LED_Matrix.vcxproj -> C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Debug\Attitude_Indicator_Keyboard_LED_Matrix.exe
