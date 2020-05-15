@@ -1,4 +1,5 @@
 #pragma once
+//Method and variable definitions for attitude indicator object
 class attitude_indicator
 {
 public:

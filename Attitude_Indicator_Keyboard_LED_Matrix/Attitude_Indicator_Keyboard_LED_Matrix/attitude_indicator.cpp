@@ -1,22 +1,35 @@
+//Chase Hunter
+//University of Washington
+//EE 497/8 2020
+//The purpose of this class is to handle all the logic of the simulated
+//attitude indicator. The attitude indicator is handled as a 2d boolean array.
+//Each location in the array corresponds to a pixel in the display.
+//Green = true and Red = false
+
+//Includes
 #include "attitude_indicator.h"
 
-
-//Constructor
+//Default Constructor
 attitude_indicator::attitude_indicator()
 {
 }
 
+//Constructor
 attitude_indicator::attitude_indicator(int dim_in)
 {
 	dim = dim_in;
 }
 
+//Sets the dimensions of the array
+//number of LED columns and rows are equal
 void attitude_indicator::setDim(int num)
 {
 	dim = num;
 	calibrate();
 }
 
+//Resets/calibrates the attitude indicator
+//Sets top half red and bottom half green
 void attitude_indicator::calibrate()
 {
 	int i;
@@ -40,12 +53,13 @@ void attitude_indicator::calibrate()
 	}
 }
 
+//Rolls the attitude indicator to the left
 void attitude_indicator::rollLeft()
 {
 	int i, j, k, l;
-	for (i = dim-1; i > 0; i--)
+	for (i = dim - 1; i > 0; i--)
 	{
-		for (j = dim/2 - 1; j >= 0; j--)
+		for (j = dim / 2 - 1; j >= 0; j--)
 		{
 			LED_Array[i][j] = detectRed(i, j);
 		}
@@ -56,20 +70,21 @@ void attitude_indicator::rollLeft()
 	}
 	for (i = 0; i < dim - 1; i++)
 	{
-		for (j = dim/2; j < dim; j++)
+		for (j = dim / 2; j < dim; j++)
 		{
 			LED_Array[i][j] = detectGreen(i, j);
 		}
 	}
 	for (k = dim - 1; k >= dim / 2; k--) {
-		LED_Array[dim-1][k] = detectGreen(dim-1, k);
+		LED_Array[dim - 1][k] = detectGreen(dim - 1, k);
 	}
 }
 
+//Rolls the attitude indicator to the right
 void attitude_indicator::rollRight()
 {
 	int i, j, k, l;
-	for (i = 0; i < dim-1; i++)
+	for (i = 0; i < dim - 1; i++)
 	{
 		for (j = dim / 2 - 1; j >= 0; j--)
 		{
@@ -86,13 +101,14 @@ void attitude_indicator::rollRight()
 			LED_Array[i][j] = detectRed(i, j);
 		}
 	}
-	for (l = dim-1; l >= dim / 2; l--)
+	for (l = dim - 1; l >= dim / 2; l--)
 	{
 		LED_Array[0][l] = detectRed(0, l);
 	}
 
 }
 
+//Determines if the pixel at the passed location should be green
 bool attitude_indicator::detectGreen(int x, int y)
 {
 	if (x != dim - 1) {
@@ -126,11 +142,12 @@ bool attitude_indicator::detectGreen(int x, int y)
 	}
 }
 
+//Determines if the pixel at the passed location should be red
 bool attitude_indicator::detectRed(int x, int y)
 {
-	if (x != 0) 
+	if (x != 0)
 	{
-		if (y == 0 && !getValue(x-1,y))
+		if (y == 0 && !getValue(x - 1, y))
 		{
 			return flipped;
 		}
@@ -160,7 +177,7 @@ bool attitude_indicator::detectRed(int x, int y)
 			return !flipped;
 		}
 	}
-	else if (y == dim-1)
+	else if (y == dim - 1)
 	{
 		if (!getValue(x, y - 1))
 		{
@@ -174,22 +191,23 @@ bool attitude_indicator::detectRed(int x, int y)
 	{
 		return flipped;
 	}
-	else 
+	else
 	{
 		return !flipped;
 	}
 }
 
+//Pitches the attitude indicator up
 void attitude_indicator::pitchUp()
 {
 	int i, j;
 	bool full = true;
 
-	for (i = dim-1; i > 0; i--)
+	for (i = dim - 1; i > 0; i--)
 	{
 		for (j = 0; j < dim; j++)
 		{
-			if (!getValue(i - 1,j) && getValue(i, j))
+			if (!getValue(i - 1, j) && getValue(i, j))
 			{
 				LED_Array[i][j] = flipped;
 				full = false;
@@ -218,16 +236,17 @@ void attitude_indicator::pitchUp()
 	//tumble(full);
 }
 
+//Pitches the attitude indicator down
 void attitude_indicator::pitchDown()
 {
 	int i, j;
 	bool full = true;
 
-	for (i = 0; i < dim-1; i++)
+	for (i = 0; i < dim - 1; i++)
 	{
 		for (j = 0; j < dim; j++)
 		{
-			if (getValue(i+1, j) == true && getValue(i, j) != true)
+			if (getValue(i + 1, j) == true && getValue(i, j) != true)
 			{
 				LED_Array[i][j] = !flipped;
 				full = false;
@@ -236,11 +255,11 @@ void attitude_indicator::pitchDown()
 		}
 	}
 
-	for (i = dim-1; i > 0; i--)
+	for (i = dim - 1; i > 0; i--)
 	{
 		if (getValue(dim - 1, i) == false && getValue(dim - 1, i - 1))
 		{
-			LED_Array[dim-1][i] = !flipped;
+			LED_Array[dim - 1][i] = !flipped;
 			full = false;
 		}
 	}
@@ -281,11 +300,14 @@ void attitude_indicator::pitchDown()
 //	}
 //}
 
+//Returns the color of the pixel at the passed location
+//Green = true, Red = false
 bool attitude_indicator::getValue(int x, int y)
 {
 	return LED_Array[x][y];
 }
 
+//Returns the current set dimenstion of the pixel array
 int attitude_indicator::getDim()
 {
 	return dim;

@@ -927,8 +927,8 @@
        Overriding target "GetNativeManifest" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "GetNativeManifest" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
        Overriding target "GetTargetPathWithTargetPlatformMoniker" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "GetTargetPathWithTargetPlatformMoniker" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.DesignTime.targets".
        The target "CoreCompile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VisualStudio\v16.0\CodeAnalysis\Microsoft.CodeAnalysis.targets (59,12)" does not exist in the project, and will be ignored.
-Build started 5/8/2020 4:25:14 PM.
-Logging verbosity is set to: Detailed.     1>Project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" on node 2 (Rebuild target(s)).
+Build started 5/14/2020 11:46:56 PM.
+Logging verbosity is set to: Detailed.     1>Project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" on node 2 (Build target(s)).
      1>Building with tools version "Current".
        Target "EnableIntermediateOutputPathMismatchWarning" skipped, due to false condition; ('$(RestoreProjectStyle)' == 'PackageReference') was evaluated as ('' == 'PackageReference').
      1>Target "_CheckForInvalidConfigurationAndPlatform" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "SetTelemetryEnvironmentVariables" depends on it):
@@ -948,109 +948,18 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\tilt7\Documents\G
        Task "Warning" skipped, due to false condition; ( '$(EnableBaseIntermediateOutputPathMismatchWarning)' == 'true' And '$(_InitialBaseIntermediateOutputPath)' != '$(BaseIntermediateOutputPath)' And '$(BaseIntermediateOutputPath)' != '$(MSBuildProjectExtensionsPath)' ) was evaluated as ( '' == 'true' And 'obj\' != 'obj\' And 'obj\' != 'C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\obj\' ).
      1>Done building target "_CheckForInvalidConfigurationAndPlatform" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
        Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
-     1>Target "SetTelemetryEnvironmentVariables" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.DesignTime.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "Rebuild" depends on it):
+     1>Target "SetTelemetryEnvironmentVariables" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.DesignTime.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "Build" depends on it):
        Using "SetEnv" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Build.CppTasks.Common.dll".
        Task "SetEnv"
-         VSTEL_SolutionSessionID={3A75FA2C-8B42-408F-B623-A9C5562CB5C6}
+         VSTEL_SolutionSessionID={B48A193F-94D8-44CA-B5FE-8897AACD929B}
        Done executing task "SetEnv".
        Task "SetEnv"
-         VSTEL_CurrentSolutionBuildID=1395686000
+         VSTEL_CurrentSolutionBuildID=1940587250
        Done executing task "SetEnv".
        Task "SetEnv"
          VSTEL_ProjectID={7B7FBE18-0835-45CA-9F58-2CBE7BE642A9}
        Done executing task "SetEnv".
      1>Done building target "SetTelemetryEnvironmentVariables" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
-     1>Target "_PrepareForRebuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "Rebuild" depends on it):
-     1>Done building target "_PrepareForRebuild" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
-     1>Target "BeforeRebuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "Rebuild" depends on it):
-     1>Done building target "BeforeRebuild" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
-     1>Target "_PrepareForClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "Clean" depends on it):
-       Using "Delete" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "Delete"
-         Deleting file "Debug\Attitude.7B7FBE18.tlog\Attitude_Indicator_Keyboard_LED_Matrix.lastbuildstate".
-       Done executing task "Delete".
-     1>Done building target "_PrepareForClean" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
-     1>Target "BeforeClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "Clean" depends on it):
-     1>Done building target "BeforeClean" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
-       Target "UnmanagedUnregistration" skipped, due to false condition; ((('$(_AssemblyTimestampBeforeCompile)' != '$(_AssemblyTimestampAfterCompile)' or '$(RegisterForComInterop)' != 'true' or '$(OutputType)' != 'library') or
-                           ('$(_AssemblyTimestampBeforeCompile)' == '')) and
-                          Exists('@(_UnmanagedRegistrationCache)')) was evaluated as ((('' != '' or '' != 'true' or 'exe' != 'library') or
-                           ('' == '')) and
-                          Exists('obj\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj.UnmanagedRegistration.cache')).
-     1>Target "CoreClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "Clean" depends on it):
-       Task "Delete"
-         File "Debug\\TempCA\Attitude_Indicator_Keyboard_LED_Matrix.pdb" doesn't exist. Skipping.
-         File "Debug\\TempCA\Attitude_Indicator_Keyboard_LED_Matrix.exe" doesn't exist. Skipping.
-       Done executing task "Delete".
-       Using "ReadLinesFromFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "ReadLinesFromFile"
-       Done executing task "ReadLinesFromFile".
-       Using "FindUnderPath" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "FindUnderPath"
-         Comparison path is "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Debug\".
-       Done executing task "FindUnderPath".
-       Task "FindUnderPath"
-         Comparison path is "Debug\".
-       Done executing task "FindUnderPath".
-       Task "Delete"
-       Done executing task "Delete".
-       Using "RemoveDuplicates" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "RemoveDuplicates"
-       Done executing task "RemoveDuplicates".
-       Using "MakeDir" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "MakeDir"
-       Done executing task "MakeDir".
-       Using "WriteLinesToFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "WriteLinesToFile"
-       Done executing task "WriteLinesToFile".
-     1>Done building target "CoreClean" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
-     1>Target "AssignProjectConfiguration" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "PrepareProjectReferences" depends on it):
-       Using "AssignProjectConfiguration" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "AssignProjectConfiguration"
-       Done executing task "AssignProjectConfiguration".
-     1>Done building target "AssignProjectConfiguration" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
-     1>Target "_SplitProjectReferencesByFileExistence" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "PrepareProjectReferences" depends on it):
-       Task "ResolveNonMSBuildProjectOutput" skipped, due to false condition; ('$(BuildingInsideVisualStudio)'=='true' and '@(ProjectReferenceWithConfiguration)'!='') was evaluated as ('true'=='true' and ''!='').
-     1>Done building target "_SplitProjectReferencesByFileExistence" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
-     1>Target "_GetProjectReferenceTargetFrameworkProperties" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "PrepareProjectReferences" depends on it):
-       Using "MSBuild" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
-       Task "MSBuild"
-       Done executing task "MSBuild".
-       Task "GetReferenceNearestTargetFrameworkTask" skipped, due to false condition; ('@(_ProjectReferenceTargetFrameworkPossibilities->Count())' != '0' and '$(ReferringTargetFrameworkForProjectReferences)' != '') was evaluated as ('0' != '0' and '.NETFramework,Version=v4.0' != '').
-     1>Done building target "_GetProjectReferenceTargetFrameworkProperties" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
-     1>Target "PrepareProjectReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "CleanReferencedProjects" depends on it):
-     1>Done building target "PrepareProjectReferences" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
-     1>Target "CleanReferencedProjects" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "Clean" depends on it):
-       Task "MSBuild" skipped, due to false condition; ('$(BuildingInsideVisualStudio)' != 'true' and '$(BuildProjectReferences)' == 'true' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('true' != 'true' and 'true' == 'true' and '' != '').
-     1>Done building target "CleanReferencedProjects" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
-     1>Target "CleanPublishFolder" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "Clean" depends on it):
-       Task "RemoveDir" skipped, due to false condition; ('$(PublishDir)'=='$(OutputPath)app.publish\' and Exists('$(PublishDir)')) was evaluated as ('C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Debug\app.publish\'=='C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Debug\app.publish\' and Exists('C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Debug\app.publish\')).
-     1>Done building target "CleanPublishFolder" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
-     1>Target "AfterClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "Clean" depends on it):
-     1>Done building target "AfterClean" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
-       Target "EntityClean" skipped, due to false condition; ('@(EntityDeploy)' != '') was evaluated as ('' != '').
-     1>Target "BeforeCppClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppClean.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "CppClean" depends on it):
-     1>Done building target "BeforeCppClean" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
-     1>Target "CoreCppClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppClean.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "CppClean" depends on it):
-       Task "MakeDir"
-       Done executing task "MakeDir".
-       Using "CppClean" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Build.CppTasks.Common.dll".
-       Task "CppClean"
-       Done executing task "CppClean".
-       Task "WriteLinesToFile"
-       Done executing task "WriteLinesToFile".
-     1>Done building target "CoreCppClean" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
-     1>Target "AfterCppClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppClean.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "CppClean" depends on it):
-     1>Done building target "AfterCppClean" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
-     1>Target "PGInstrumentedClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppClean.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "CppClean" depends on it):
-       Task "Delete"
-       Done executing task "Delete".
-     1>Done building target "PGInstrumentedClean" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
-     1>Target "CppClean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppClean.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "Clean" depends on it):
-     1>Done building target "CppClean" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
-     1>Target "Clean" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "Rebuild" depends on it):
-     1>Done building target "Clean" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
-       Target "SetTelemetryEnvironmentVariables" skipped. Previously built successfully.
      1>Target "_PrepareForBuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "Build" depends on it):
        Task "CreateItem" skipped, due to false condition; ('%(CustomBuild.IncludeFileToTool)'!='') was evaluated as (''!='').
      1>Done building target "_PrepareForBuild" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
@@ -1060,8 +969,23 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\tilt7\Documents\G
        Target "ComputeCrtSDKReference" skipped, due to false condition; ('@(ClCompile)'!='' and '$(WindowsAppContainer)'=='true' and '$(UseCrtSDKReference)' != 'false') was evaluated as ('attitude_indicator.cpp;LED_Matrix.cpp;Source.cpp'!='' and 'false'=='true' and '' != 'false').
      1>Target "BeforeResolveReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "ResolveReferences" depends on it):
      1>Done building target "BeforeResolveReferences" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
+     1>Target "AssignProjectConfiguration" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "ResolveReferences" depends on it):
+       Using "AssignProjectConfiguration" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "AssignProjectConfiguration"
+       Done executing task "AssignProjectConfiguration".
+     1>Done building target "AssignProjectConfiguration" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
        Target "AssignProjectConfiguration" skipped. Previously built successfully.
-       Target "PrepareProjectReferences" skipped. Previously built successfully.
+     1>Target "_SplitProjectReferencesByFileExistence" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "PrepareProjectReferences" depends on it):
+       Task "ResolveNonMSBuildProjectOutput" skipped, due to false condition; ('$(BuildingInsideVisualStudio)'=='true' and '@(ProjectReferenceWithConfiguration)'!='') was evaluated as ('true'=='true' and ''!='').
+     1>Done building target "_SplitProjectReferencesByFileExistence" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
+     1>Target "_GetProjectReferenceTargetFrameworkProperties" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "PrepareProjectReferences" depends on it):
+       Using "MSBuild" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+       Task "MSBuild"
+       Done executing task "MSBuild".
+       Task "GetReferenceNearestTargetFrameworkTask" skipped, due to false condition; ('@(_ProjectReferenceTargetFrameworkPossibilities->Count())' != '0' and '$(ReferringTargetFrameworkForProjectReferences)' != '') was evaluated as ('0' != '0' and '.NETFramework,Version=v4.0' != '').
+     1>Done building target "_GetProjectReferenceTargetFrameworkProperties" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
+     1>Target "PrepareProjectReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "ResolveProjectReferences" depends on it):
+     1>Done building target "PrepareProjectReferences" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
        Target "_RemoveNameMetadataFromProjectReferenceItems" skipped, due to false condition; ('@(ProjectReference)'!='') was evaluated as (''!='').
      1>Target "ResolveProjectReferences" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "ResolveReferences" depends on it):
        Task "MSBuild" skipped, due to false condition; ('%(_MSBuildProjectReferenceExistent.BuildReference)' == 'true' and '@(ProjectReferenceWithConfiguration)' != '' and ('$(BuildingInsideVisualStudio)' == 'true' or '$(BuildProjectReferences)' != 'true') and '$(VisualStudioVersion)' != '10.0' and '@(_MSBuildProjectReferenceExistent)' != '') was evaluated as ('' == 'true' and '' != '' and ('true' == 'true' or 'true' != 'true') and '16.0' != '10.0' and '' != '').
@@ -1116,6 +1040,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\tilt7\Documents\G
      1>Target "PrepareForBuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "ResolveAssemblyReferences" depends on it):
        Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)' != 'true' and '$(ConfigurationPlatformExists)' != 'true') was evaluated as ('' != 'true' and 'true' != 'true').
        Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)' != 'true' and '$(_ToolsetFound)' != 'true') was evaluated as ('' != 'true' and 'true' != 'true').
+       Using "MakeDir" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "MakeDir"
        Done executing task "MakeDir".
        Task "VCMessage" skipped, due to false condition; ('$(DesignTimeBuild)'!='true' and '$(WindowsAppContainer)'=='true' and '$(ConfigurationType)'!='Application' and '$(ConfigurationType)'!='DynamicLibrary' and '$(ConfigurationType)'!='StaticLibrary') was evaluated as (''!='true' and 'false'=='true' and 'Application'!='Application' and 'Application'!='DynamicLibrary' and 'Application'!='StaticLibrary').
@@ -1181,8 +1106,10 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\tilt7\Documents\G
        Target "PrepareForBuild" skipped. Previously built successfully.
        Target "PrepareForBuild" skipped. Previously built successfully.
      1>Target "InitializeBuildStatus" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "Build" depends on it):
+       Using "ReadLinesFromFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "ReadLinesFromFile"
        Done executing task "ReadLinesFromFile".
+       Using "WriteLinesToFile" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "WriteLinesToFile"
        Done executing task "WriteLinesToFile".
        Using "Touch" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
@@ -1300,22 +1227,30 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\tilt7\Documents\G
      1>Done building target "SelectClCompile" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
        Target "ManagedIncrementalBuildPreProcessDependencyGraph" skipped, due to false condition; ('@(ClCompile)' != '' and '$(EnableManagedIncrementalBuild)' == 'True') was evaluated as ('attitude_indicator.cpp;LED_Matrix.cpp;Source.cpp' != '' and 'false' == 'True').
      1>Target "ClCompile" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "_ClCompile" depends on it):
-       Task "Delete"
-       Done executing task "Delete".
+       Task "Delete" skipped, due to false condition; ('%(ClCompile.DebugInformationFormat)' != '' and '%(ClCompile.DebugInformationFormat)' != 'None' and '%(ClCompile.DebugInformationFormat)' != 'OldStyle' and '%(ClCompile.ProgramDataBaseFileName)' != '' and !Exists(%(ClCompile.ProgramDataBaseFileName))) was evaluated as ('EditAndContinue' != '' and 'EditAndContinue' != 'None' and 'EditAndContinue' != 'OldStyle' and 'Debug\vc142.pdb' != '' and !Exists(Debug\vc142.pdb)).
        Task "MultiToolTask" skipped, due to false condition; ('%(ClCompile.ExcludedFromBuild)' != 'true' and '%(ClCompile.CompilerIteration)' == '' and '$(MultiProcCL)' == 'true') was evaluated as ('' != 'true' and '' == '' and 'false' == 'true').
        Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' == 'Create' and '%(ClCompile.ExcludedFromBuild)'!='true' and '%(ClCompile.CompilerIteration)' == '' and '$(MultiProcCL)' != 'true') was evaluated as ('NotUsing' == 'Create' and ''!='true' and '' == '' and 'false' != 'true').
        Using "CL" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Build.CppTasks.Common.dll".
        Task "CL"
-         Forcing recompile of all source files due to missing PDB "Debug\vc142.pdb".
+         Read Tracking Logs:
+         	Debug\Attitude.7B7FBE18.tlog\CL.read.1.tlog
+         Outputs for C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR.CPP|C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\LED_MATRIX.CPP|C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\SOURCE.CPP:
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\DEBUG\ATTITUDE_INDICATOR.OBJ
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\DEBUG\LED_MATRIX.OBJ
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\DEBUG\SOURCE.OBJ
+         LED_Matrix.cpp will be compiled because C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\LED_Matrix.cpp was modified at 5/14/2020 11:44:30 PM.
+         Source.cpp will be compiled because C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\LED_MATRIX.H was modified at 5/14/2020 11:46:48 PM.
+         No output for C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\LED_MATRIX.CPP|C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\SOURCE.CPP was found in the tracking log; source compilation required.
+         Write Tracking Logs:
+         	Debug\Attitude.7B7FBE18.tlog\CL.write.1.tlog
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1444
-         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\HostX86\x86\CL.exe /c /I"..\..\Required Files\lib\vc_lib\mswud" /I"..\..\Required Files\include" /I..\Attitude_Indicator_Keyboard_LED_Matrix /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CRT_SECURE_NO_DEPRECATE=1 /D _CRT_NON_CONFORMING_SWPRINTFS=1 /D _SCL_SECURE_NO_WARNINGS=1 /D __WXMSW__ /D _UNICODE /D _WINDOWS /D NOPCH /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt attitude_indicator.cpp LED_Matrix.cpp Source.cpp
+           VS_UNICODE_OUTPUT=1476
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\HostX86\x86\CL.exe /c /I"..\..\Required Files\lib\vc_lib\mswud" /I"..\..\Required Files\include" /I..\Attitude_Indicator_Keyboard_LED_Matrix /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CRT_SECURE_NO_DEPRECATE=1 /D _CRT_NON_CONFORMING_SWPRINTFS=1 /D _SCL_SECURE_NO_WARNINGS=1 /D __WXMSW__ /D _UNICODE /D _WINDOWS /D NOPCH /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt LED_Matrix.cpp Source.cpp
          Tracking command:
-         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Debug\Attitude.7B7FBE18.tlog /r "C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR.CPP|C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\LED_MATRIX.CPP|C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\SOURCE.CPP" /b MSBuildConsole_CancelEventf5408f93dcac4bd797dbd9ae5cfaf1a6  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\HostX86\x86\CL.exe"  /c /I"..\..\Required Files\lib\vc_lib\mswud" /I"..\..\Required Files\include" /I..\Attitude_Indicator_Keyboard_LED_Matrix /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CRT_SECURE_NO_DEPRECATE=1 /D _CRT_NON_CONFORMING_SWPRINTFS=1 /D _SCL_SECURE_NO_WARNINGS=1 /D __WXMSW__ /D _UNICODE /D _WINDOWS /D NOPCH /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt attitude_indicator.cpp LED_Matrix.cpp Source.cpp
-         attitude_indicator.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Debug\Attitude.7B7FBE18.tlog /r "C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\LED_MATRIX.CPP|C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\SOURCE.CPP" /b MSBuildConsole_CancelEvent74e64262c28648fb9835c9c65e065063  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\HostX86\x86\CL.exe"  /c /I"..\..\Required Files\lib\vc_lib\mswud" /I"..\..\Required Files\include" /I..\Attitude_Indicator_Keyboard_LED_Matrix /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CRT_SECURE_NO_DEPRECATE=1 /D _CRT_NON_CONFORMING_SWPRINTFS=1 /D _SCL_SECURE_NO_WARNINGS=1 /D __WXMSW__ /D _UNICODE /D _WINDOWS /D NOPCH /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt LED_Matrix.cpp Source.cpp
          LED_Matrix.cpp
          Source.cpp
-     1>C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Source.cpp(11,1): warning C4005: '_MSC_VER': macro redefinition
+     1>C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Source.cpp(21,1): warning C4005: '_MSC_VER': macro redefinition
        C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Source.cpp : message : see previous definition of '_MSC_VER'
          Generating Code...
        Done executing task "CL".
@@ -1431,20 +1366,65 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\tilt7\Documents\G
      1>Target "Link" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "_Link" depends on it):
        Using "Link" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Build.CppTasks.Common.dll".
        Task "Link"
+         Write Tracking Logs:
+         	Debug\Attitude.7B7FBE18.tlog\link.write.1.tlog
+         Read Tracking Logs:
+         	Debug\Attitude.7B7FBE18.tlog\link.read.1.tlog
+         Outputs for C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\DEBUG\ATTITUDE_INDICATOR.OBJ|C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\DEBUG\LED_MATRIX.OBJ|C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\DEBUG\SOURCE.OBJ:
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\DEBUG\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX.EXE
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\DEBUG\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX.ILK
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\DEBUG\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX.PDB
+         Inputs for C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\DEBUG\ATTITUDE_INDICATOR.OBJ|C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\DEBUG\LED_MATRIX.OBJ|C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\DEBUG\SOURCE.OBJ:
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\REQUIRED FILES\LIB\VC_LIB\WXMSW30UD_CORE.LIB
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\REQUIRED FILES\LIB\VC_LIB\WXBASE30UD.LIB
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\REQUIRED FILES\LIB\VC_LIB\WXTIFFD.LIB
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\REQUIRED FILES\LIB\VC_LIB\WXJPEGD.LIB
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\REQUIRED FILES\LIB\VC_LIB\WXPNGD.LIB
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\REQUIRED FILES\LIB\VC_LIB\WXZLIBD.LIB
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\REQUIRED FILES\LIB\VC_LIB\WXREGEXUD.LIB
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\REQUIRED FILES\LIB\VC_LIB\WXEXPATD.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\KERNEL32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\USER32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\GDI32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\COMDLG32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\WINSPOOL.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\WINMM.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\SHELL32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\COMCTL32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\OLE32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\OLEAUT32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\UUID.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\RPCRT4.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\ADVAPI32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\WSOCK32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\WININET.LIB
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\REQUIRED FILES\LIB\LIB\WINDOWS\VISUALSTUDIO\WIN32\DEBUG\LIBMPSSE.LIB
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\REQUIRED FILES\LIB\STATIC\I386\FTD2XX.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\ODBC32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\ODBCCP32.LIB
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\DEBUG\ATTITUDE_INDICATOR.OBJ
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\DEBUG\LED_MATRIX.OBJ
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\DEBUG\SOURCE.OBJ
+         	C:\WINDOWS\SYSTEM32\TZRES.DLL
+         	C:\WINDOWS\GLOBALIZATION\SORTING\SORTDEFAULT.NLS
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.25.28610\LIB\X86\MSVCRTD.LIB
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.25.28610\LIB\X86\OLDNAMES.LIB
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.25.28610\LIB\X86\MSVCPRTD.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\OLEACC.LIB
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.25.28610\LIB\X86\LIBCMTD.LIB
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.25.28610\LIB\X86\VCRUNTIMED.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UCRT\X86\UCRTD.LIB
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.25.28610\BIN\HOSTX86\X86\MSPDBSRV.EXE
+         Source compilation required: input C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\DEBUG\LED_MATRIX.OBJ is newer than output C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\DEBUG\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX.PDB.
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1460
+           VS_UNICODE_OUTPUT=1452
          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Debug\Attitude_Indicator_Keyboard_LED_Matrix.exe" /INCREMENTAL /NOLOGO /LIBPATH:"..\..\Required Files\lib\Static\i386" /LIBPATH:"..\..\Required Files\lib\lib\windows\visualstudio\win32\Debug" /LIBPATH:"..\..\Required Files\lib\vc_lib" wxmsw30ud_core.lib wxbase30ud.lib wxtiffd.lib wxjpegd.lib wxpngd.lib wxzlibd.lib wxregexud.lib wxexpatd.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib winspool.lib winmm.lib shell32.lib comctl32.lib ole32.lib oleaut32.lib uuid.lib rpcrt4.lib advapi32.lib wsock32.lib wininet.lib libMPSSE.lib ftd2xx.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Debug\Attitude_Indicator_Keyboard_LED_Matrix.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Debug\Attitude_Indicator_Keyboard_LED_Matrix.lib" /MACHINE:X86 Debug\attitude_indicator.obj
          Debug\LED_Matrix.obj
          Debug\Source.obj
          Tracking command:
-         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Debug\Attitude.7B7FBE18.tlog /r "C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\DEBUG\ATTITUDE_INDICATOR.OBJ|C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\DEBUG\LED_MATRIX.OBJ|C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\DEBUG\SOURCE.OBJ" /b MSBuildConsole_CancelEvent4d71171932ab47ed8fef478dc9ed0dcf  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\HostX86\x86\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Debug\Attitude_Indicator_Keyboard_LED_Matrix.exe" /INCREMENTAL /NOLOGO /LIBPATH:"..\..\Required Files\lib\Static\i386" /LIBPATH:"..\..\Required Files\lib\lib\windows\visualstudio\win32\Debug" /LIBPATH:"..\..\Required Files\lib\vc_lib" wxmsw30ud_core.lib wxbase30ud.lib wxtiffd.lib wxjpegd.lib wxpngd.lib wxzlibd.lib wxregexud.lib wxexpatd.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib winspool.lib winmm.lib shell32.lib comctl32.lib ole32.lib oleaut32.lib uuid.lib rpcrt4.lib advapi32.lib wsock32.lib wininet.lib libMPSSE.lib ftd2xx.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Debug\Attitude_Indicator_Keyboard_LED_Matrix.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Debug\Attitude_Indicator_Keyboard_LED_Matrix.lib" /MACHINE:X86 Debug\attitude_indicator.obj
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Debug\Attitude.7B7FBE18.tlog /r "C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\DEBUG\ATTITUDE_INDICATOR.OBJ|C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\DEBUG\LED_MATRIX.OBJ|C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\ATTITUDE_INDICATOR_KEYBOARD_LED_MATRIX\DEBUG\SOURCE.OBJ" /b MSBuildConsole_CancelEventd443d8fdc492438aaca1c68d361959c2  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\HostX86\x86\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Debug\Attitude_Indicator_Keyboard_LED_Matrix.exe" /INCREMENTAL /NOLOGO /LIBPATH:"..\..\Required Files\lib\Static\i386" /LIBPATH:"..\..\Required Files\lib\lib\windows\visualstudio\win32\Debug" /LIBPATH:"..\..\Required Files\lib\vc_lib" wxmsw30ud_core.lib wxbase30ud.lib wxtiffd.lib wxjpegd.lib wxpngd.lib wxzlibd.lib wxregexud.lib wxexpatd.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib winspool.lib winmm.lib shell32.lib comctl32.lib ole32.lib oleaut32.lib uuid.lib rpcrt4.lib advapi32.lib wsock32.lib wininet.lib libMPSSE.lib ftd2xx.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Debug\Attitude_Indicator_Keyboard_LED_Matrix.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Debug\Attitude_Indicator_Keyboard_LED_Matrix.lib" /MACHINE:X86 Debug\attitude_indicator.obj
          Debug\LED_Matrix.obj
          Debug\Source.obj
-            Creating library C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Debug\Attitude_Indicator_Keyboard_LED_Matrix.lib and object C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Debug\Attitude_Indicator_Keyboard_LED_Matrix.exp
-     1>LINK : warning LNK4098: defaultlib 'LIBCMTD' conflicts with use of other libs; use /NODEFAULTLIB:library
-     1>libMPSSE.lib(ftdi_i2c.obj) : warning LNK4099: PDB 'libMPSSE_StaticLibrary.pdb' was not found with 'libMPSSE.lib(ftdi_i2c.obj)' or at 'C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Debug\libMPSSE_StaticLibrary.pdb'; linking object as if no debug info
-     1>libMPSSE.lib(ftdi_infra.obj) : warning LNK4099: PDB 'libMPSSE_StaticLibrary.pdb' was not found with 'libMPSSE.lib(ftdi_infra.obj)' or at 'C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Debug\libMPSSE_StaticLibrary.pdb'; linking object as if no debug info
-     1>libMPSSE.lib(ftdi_mid.obj) : warning LNK4099: PDB 'libMPSSE_StaticLibrary.pdb' was not found with 'libMPSSE.lib(ftdi_mid.obj)' or at 'C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Debug\libMPSSE_StaticLibrary.pdb'; linking object as if no debug info
        Done executing task "Link".
        Task "Message"
          Attitude_Indicator_Keyboard_LED_Matrix.vcxproj -> C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Debug\Attitude_Indicator_Keyboard_LED_Matrix.exe
@@ -1590,6 +1570,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\tilt7\Documents\G
        Using "ConvertToAbsolutePath" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "ConvertToAbsolutePath"
        Done executing task "ConvertToAbsolutePath".
+       Using "FindUnderPath" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "FindUnderPath"
          Comparison path is "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix".
        Done executing task "FindUnderPath".
@@ -1599,6 +1580,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\tilt7\Documents\G
        Task "FindUnderPath"
          Comparison path is "Debug\".
        Done executing task "FindUnderPath".
+       Using "RemoveDuplicates" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "RemoveDuplicates"
        Done executing task "RemoveDuplicates".
      1>Done building target "_CleanGetCurrentAndPriorFileWrites" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
@@ -1609,6 +1591,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\tilt7\Documents\G
        Task "FindUnderPath"
          Comparison path is "Debug\".
        Done executing task "FindUnderPath".
+       Using "Delete" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "Delete"
        Done executing task "Delete".
        Task "RemoveDuplicates"
@@ -1623,30 +1606,19 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\tilt7\Documents\G
          Touching "Debug\Attitude.7B7FBE18.tlog\Attitude_Indicator_Keyboard_LED_Matrix.lastbuildstate".
        Done executing task "Touch".
      1>Done building target "FinalizeBuildStatus" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
-     1>Target "Build" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "Rebuild" depends on it):
-     1>Done building target "Build" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
-     1>Target "AfterRebuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (target "Rebuild" depends on it):
-     1>Done building target "AfterRebuild" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
        Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
-     1>Target "Rebuild" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (entry point):
-     1>Done building target "Rebuild" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
-     1>Done Building Project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (Rebuild target(s)).
+       Target "_CheckForInvalidConfigurationAndPlatform" skipped. Previously built successfully.
+     1>Target "Build" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.BuildSteps.Targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (entry point):
+     1>Done building target "Build" in project "Attitude_Indicator_Keyboard_LED_Matrix.vcxproj".
+     1>Done Building Project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-       "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (Rebuild target) (1) ->
+       "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (Build target) (1) ->
        (ClCompile target) -> 
-         C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Source.cpp(11,1): warning C4005: '_MSC_VER': macro redefinition
+         C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Source.cpp(21,1): warning C4005: '_MSC_VER': macro redefinition
 
-
-       "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix\Attitude_Indicator_Keyboard_LED_Matrix.vcxproj" (Rebuild target) (1) ->
-       (Link target) -> 
-         LINK : warning LNK4098: defaultlib 'LIBCMTD' conflicts with use of other libs; use /NODEFAULTLIB:library
-         libMPSSE.lib(ftdi_i2c.obj) : warning LNK4099: PDB 'libMPSSE_StaticLibrary.pdb' was not found with 'libMPSSE.lib(ftdi_i2c.obj)' or at 'C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Debug\libMPSSE_StaticLibrary.pdb'; linking object as if no debug info
-         libMPSSE.lib(ftdi_infra.obj) : warning LNK4099: PDB 'libMPSSE_StaticLibrary.pdb' was not found with 'libMPSSE.lib(ftdi_infra.obj)' or at 'C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Debug\libMPSSE_StaticLibrary.pdb'; linking object as if no debug info
-         libMPSSE.lib(ftdi_mid.obj) : warning LNK4099: PDB 'libMPSSE_StaticLibrary.pdb' was not found with 'libMPSSE.lib(ftdi_mid.obj)' or at 'C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard_LED_Matrix\Debug\libMPSSE_StaticLibrary.pdb'; linking object as if no debug info
-
-    5 Warning(s)
+    1 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:08.53
+Time Elapsed 00:00:05.86

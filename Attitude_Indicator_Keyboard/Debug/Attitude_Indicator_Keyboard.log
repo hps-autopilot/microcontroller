@@ -927,7 +927,7 @@
        Overriding target "GetNativeManifest" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "GetNativeManifest" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets".
        Overriding target "GetTargetPathWithTargetPlatformMoniker" in project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets" with target "GetTargetPathWithTargetPlatformMoniker" from project "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.DesignTime.targets".
        The target "CoreCompile" listed in a BeforeTargets attribute at "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VisualStudio\v16.0\CodeAnalysis\Microsoft.CodeAnalysis.targets (59,12)" does not exist in the project, and will be ignored.
-Build started 5/9/2020 3:12:50 PM.
+Build started 5/14/2020 11:10:00 PM.
 Logging verbosity is set to: Detailed.     1>Project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard\Attitude_Indicator_Keyboard.vcxproj" on node 2 (Build target(s)).
      1>Building with tools version "Current".
        Target "EnableIntermediateOutputPathMismatchWarning" skipped, due to false condition; ('$(RestoreProjectStyle)' == 'PackageReference') was evaluated as ('' == 'PackageReference').
@@ -951,10 +951,10 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\tilt7\Documents\G
      1>Target "SetTelemetryEnvironmentVariables" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Cpp.DesignTime.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard\Attitude_Indicator_Keyboard.vcxproj" (target "Build" depends on it):
        Using "SetEnv" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Build.CppTasks.Common.dll".
        Task "SetEnv"
-         VSTEL_SolutionSessionID={E991782B-5D4A-4ED5-8C03-FF858A0DCE92}
+         VSTEL_SolutionSessionID={684BE62F-EDC3-4121-9C5D-59AD22B249AF}
        Done executing task "SetEnv".
        Task "SetEnv"
-         VSTEL_CurrentSolutionBuildID=1477738609
+         VSTEL_CurrentSolutionBuildID=1938372046
        Done executing task "SetEnv".
        Task "SetEnv"
          VSTEL_ProjectID={CB8FD4FB-EF82-40A3-82DC-2AE39AE9B45D}
@@ -1114,7 +1114,7 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\tilt7\Documents\G
        Done executing task "WriteLinesToFile".
        Using "Touch" task from assembly "Microsoft.Build.Tasks.Core, Version=15.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
        Task "Touch"
-         Touching "Debug\Attitude.CB8FD4FB.tlog\unsuccessfulbuild".
+         Creating "Debug\Attitude.CB8FD4FB.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
        Done executing task "Touch".
      1>Done building target "InitializeBuildStatus" in project "Attitude_Indicator_Keyboard.vcxproj".
        Target "PrepareProjectReferences" skipped. Previously built successfully.
@@ -1231,16 +1231,24 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\tilt7\Documents\G
        Task "CL" skipped, due to false condition; ('%(ClCompile.PrecompiledHeader)' == 'Create' and '%(ClCompile.ExcludedFromBuild)'!='true' and '%(ClCompile.CompilerIteration)' == '' and '$(MultiProcCL)' != 'true') was evaluated as ('NotUsing' == 'Create' and ''!='true' and '' == '' and 'false' != 'true').
        Using "CL" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Build.CppTasks.Common.dll".
        Task "CL"
+         Read Tracking Logs:
+         	Debug\Attitude.CB8FD4FB.tlog\CL.read.1.tlog
+         Outputs for C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD\ATTITUDE_INDICATOR.CPP|C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD\SOURCE_CURRENT.CPP:
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD\DEBUG\ATTITUDE_INDICATOR.OBJ
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD\DEBUG\SOURCE_CURRENT.OBJ
+         Source_current.cpp will be compiled because C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard\Source_current.cpp was modified at 5/14/2020 11:10:00 PM.
+         Outputs for C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD\SOURCE_CURRENT.CPP:
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD\DEBUG\SOURCE_CURRENT.OBJ
+         Write Tracking Logs:
+         	Debug\Attitude.CB8FD4FB.tlog\CL.write.1.tlog
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1784
-         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\HostX86\x86\CL.exe /c /I"..\Required Files\lib\vc_lib\mswud" /I"..\Required Files\include" /I..\Attitude_Indicator_Keyboard /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CRT_SECURE_NO_DEPRECATE=1 /D _CRT_NON_CONFORMING_SWPRINTFS=1 /D _SCL_SECURE_NO_WARNINGS=1 /D __WXMSW__ /D _UNICODE /D _WINDOWS /D NOPCH /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt attitude_indicator.cpp Source_current.cpp
+           VS_UNICODE_OUTPUT=832
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\HostX86\x86\CL.exe /c /I"..\Required Files\lib\vc_lib\mswud" /I"..\Required Files\include" /I..\Attitude_Indicator_Keyboard /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CRT_SECURE_NO_DEPRECATE=1 /D _CRT_NON_CONFORMING_SWPRINTFS=1 /D _SCL_SECURE_NO_WARNINGS=1 /D __WXMSW__ /D _UNICODE /D _WINDOWS /D NOPCH /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt Source_current.cpp
          Tracking command:
-         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard\Debug\Attitude.CB8FD4FB.tlog /r "C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD\ATTITUDE_INDICATOR.CPP|C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD\SOURCE_CURRENT.CPP" /b MSBuildConsole_CancelEvent291408058e594985a89b02fba4ea2441  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\HostX86\x86\CL.exe"  /c /I"..\Required Files\lib\vc_lib\mswud" /I"..\Required Files\include" /I..\Attitude_Indicator_Keyboard /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CRT_SECURE_NO_DEPRECATE=1 /D _CRT_NON_CONFORMING_SWPRINTFS=1 /D _SCL_SECURE_NO_WARNINGS=1 /D __WXMSW__ /D _UNICODE /D _WINDOWS /D NOPCH /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt attitude_indicator.cpp Source_current.cpp
-         attitude_indicator.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard\Debug\Attitude.CB8FD4FB.tlog /r C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD\SOURCE_CURRENT.CPP /b MSBuildConsole_CancelEventf044aca5eeac4d96a91122587b9dc47b  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\HostX86\x86\CL.exe"  /c /I"..\Required Files\lib\vc_lib\mswud" /I"..\Required Files\include" /I..\Attitude_Indicator_Keyboard /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CRT_SECURE_NO_DEPRECATE=1 /D _CRT_NON_CONFORMING_SWPRINTFS=1 /D _SCL_SECURE_NO_WARNINGS=1 /D __WXMSW__ /D _UNICODE /D _WINDOWS /D NOPCH /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /Gd /TP /analyze- /FC /errorReport:prompt Source_current.cpp
          Source_current.cpp
-     1>C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard\Source_current.cpp(10,1): warning C4005: '_MSC_VER': macro redefinition
+     1>C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard\Source_current.cpp(16,1): warning C4005: '_MSC_VER': macro redefinition
        C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard\Source_current.cpp : message : see previous definition of '_MSC_VER'
-         Generating Code...
        Done executing task "CL".
      1>Done building target "ClCompile" in project "Attitude_Indicator_Keyboard.vcxproj".
        Target "RunSelectedFileNativeCodeAnalysis" skipped, due to false condition; ('$(RunMsvcAnalysis)'=='true' and '$(SelectedFiles)'!='') was evaluated as ('false'=='true' and ''!='').
@@ -1354,14 +1362,58 @@ Logging verbosity is set to: Detailed.     1>Project "C:\Users\tilt7\Documents\G
      1>Target "Link" in file "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets" from project "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard\Attitude_Indicator_Keyboard.vcxproj" (target "_Link" depends on it):
        Using "Link" task from assembly "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.Build.CppTasks.Common.dll".
        Task "Link"
+         Write Tracking Logs:
+         	Debug\Attitude.CB8FD4FB.tlog\link.write.1.tlog
+         Read Tracking Logs:
+         	Debug\Attitude.CB8FD4FB.tlog\link.read.1.tlog
+         Outputs for C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD\DEBUG\ATTITUDE_INDICATOR.OBJ|C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD\DEBUG\SOURCE_CURRENT.OBJ:
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD\DEBUG\ATTITUDE_INDICATOR_KEYBOARD.EXE
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD\DEBUG\ATTITUDE_INDICATOR_KEYBOARD.ILK
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD\DEBUG\ATTITUDE_INDICATOR_KEYBOARD.PDB
+         Inputs for C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD\DEBUG\ATTITUDE_INDICATOR.OBJ|C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD\DEBUG\SOURCE_CURRENT.OBJ:
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\REQUIRED FILES\LIB\VC_LIB\WXMSW30UD_CORE.LIB
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\REQUIRED FILES\LIB\VC_LIB\WXBASE30UD.LIB
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\REQUIRED FILES\LIB\VC_LIB\WXTIFFD.LIB
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\REQUIRED FILES\LIB\VC_LIB\WXJPEGD.LIB
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\REQUIRED FILES\LIB\VC_LIB\WXPNGD.LIB
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\REQUIRED FILES\LIB\VC_LIB\WXZLIBD.LIB
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\REQUIRED FILES\LIB\VC_LIB\WXREGEXUD.LIB
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\REQUIRED FILES\LIB\VC_LIB\WXEXPATD.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\KERNEL32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\USER32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\GDI32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\COMDLG32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\WINSPOOL.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\WINMM.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\SHELL32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\COMCTL32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\OLE32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\OLEAUT32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\UUID.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\RPCRT4.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\ADVAPI32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\WSOCK32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\WININET.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\ODBC32.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\ODBCCP32.LIB
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD\DEBUG\ATTITUDE_INDICATOR.OBJ
+         	C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD\DEBUG\SOURCE_CURRENT.OBJ
+         	C:\WINDOWS\SYSTEM32\TZRES.DLL
+         	C:\WINDOWS\GLOBALIZATION\SORTING\SORTDEFAULT.NLS
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.25.28610\LIB\X86\MSVCRTD.LIB
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.25.28610\LIB\X86\OLDNAMES.LIB
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.25.28610\LIB\X86\MSVCPRTD.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UM\X86\OLEACC.LIB
+         	C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO\2019\COMMUNITY\VC\TOOLS\MSVC\14.25.28610\LIB\X86\VCRUNTIMED.LIB
+         	C:\PROGRAM FILES (X86)\WINDOWS KITS\10\LIB\10.0.18362.0\UCRT\X86\UCRTD.LIB
+         Source compilation required: input C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD\DEBUG\SOURCE_CURRENT.OBJ is newer than output C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD\DEBUG\ATTITUDE_INDICATOR_KEYBOARD.PDB.
          Environment Variables passed to tool:
-           VS_UNICODE_OUTPUT=1840
+           VS_UNICODE_OUTPUT=1460
          C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard\Debug\Attitude_Indicator_Keyboard.exe" /INCREMENTAL /NOLOGO /LIBPATH:"..\Required Files\lib\vc_lib" wxmsw30ud_core.lib wxbase30ud.lib wxtiffd.lib wxjpegd.lib wxpngd.lib wxzlibd.lib wxregexud.lib wxexpatd.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib winspool.lib winmm.lib shell32.lib comctl32.lib ole32.lib oleaut32.lib uuid.lib rpcrt4.lib advapi32.lib wsock32.lib wininet.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard\Debug\Attitude_Indicator_Keyboard.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard\Debug\Attitude_Indicator_Keyboard.lib" /MACHINE:X86 Debug\attitude_indicator.obj
          Debug\Source_current.obj
          Tracking command:
-         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard\Debug\Attitude.CB8FD4FB.tlog /r "C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD\DEBUG\ATTITUDE_INDICATOR.OBJ|C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD\DEBUG\SOURCE_CURRENT.OBJ" /b MSBuildConsole_CancelEvent230f6fc394af498ca036faee891ec485  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\HostX86\x86\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard\Debug\Attitude_Indicator_Keyboard.exe" /INCREMENTAL /NOLOGO /LIBPATH:"..\Required Files\lib\vc_lib" wxmsw30ud_core.lib wxbase30ud.lib wxtiffd.lib wxjpegd.lib wxpngd.lib wxzlibd.lib wxregexud.lib wxexpatd.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib winspool.lib winmm.lib shell32.lib comctl32.lib ole32.lib oleaut32.lib uuid.lib rpcrt4.lib advapi32.lib wsock32.lib wininet.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard\Debug\Attitude_Indicator_Keyboard.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard\Debug\Attitude_Indicator_Keyboard.lib" /MACHINE:X86 Debug\attitude_indicator.obj
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Tracker.exe /a /d "C:\Program Files (x86)\MSBuild\15.0\FileTracker\FileTracker32.dll" /i C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard\Debug\Attitude.CB8FD4FB.tlog /r "C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD\DEBUG\ATTITUDE_INDICATOR.OBJ|C:\USERS\TILT7\DOCUMENTS\GITHUB\MICROCONTROLLER\ATTITUDE_INDICATOR_KEYBOARD\DEBUG\SOURCE_CURRENT.OBJ" /b MSBuildConsole_CancelEvent091507d6f4334b5497a5ab6d8347da84  /c "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.25.28610\bin\HostX86\x86\link.exe"  /ERRORREPORT:PROMPT /OUT:"C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard\Debug\Attitude_Indicator_Keyboard.exe" /INCREMENTAL /NOLOGO /LIBPATH:"..\Required Files\lib\vc_lib" wxmsw30ud_core.lib wxbase30ud.lib wxtiffd.lib wxjpegd.lib wxpngd.lib wxzlibd.lib wxregexud.lib wxexpatd.lib kernel32.lib user32.lib gdi32.lib comdlg32.lib winspool.lib winmm.lib shell32.lib comctl32.lib ole32.lib oleaut32.lib uuid.lib rpcrt4.lib advapi32.lib wsock32.lib wininet.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG:FASTLINK /PDB:"C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard\Debug\Attitude_Indicator_Keyboard.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard\Debug\Attitude_Indicator_Keyboard.lib" /MACHINE:X86 Debug\attitude_indicator.obj
          Debug\Source_current.obj
-         LINK : C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard\Debug\Attitude_Indicator_Keyboard.exe not found or not built by the last incremental link; performing full link
        Done executing task "Link".
        Task "Message"
          Attitude_Indicator_Keyboard.vcxproj -> C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard\Debug\Attitude_Indicator_Keyboard.exe
@@ -1555,9 +1607,9 @@ Build succeeded.
 
        "C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard\Attitude_Indicator_Keyboard.vcxproj" (Build target) (1) ->
        (ClCompile target) -> 
-         C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard\Source_current.cpp(10,1): warning C4005: '_MSC_VER': macro redefinition
+         C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Keyboard\Source_current.cpp(16,1): warning C4005: '_MSC_VER': macro redefinition
 
     1 Warning(s)
     0 Error(s)
 
-Time Elapsed 00:00:11.87
+Time Elapsed 00:00:04.56

@@ -1,4 +1,7 @@
 #pragma once
+//Method and variable definitions for data_reader object
+
+//Includes
 #include <string>
 #include <fstream>
 #include <iostream>

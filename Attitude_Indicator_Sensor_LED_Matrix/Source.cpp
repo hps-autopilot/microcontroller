@@ -1,4 +1,13 @@
-// For compilers that support precompilation, includes "wx/wx.h".
+//Chase Hunter
+//University of Washington
+//EE 497/8 2020
+//The purpose of this program is to implent the attitude indicator
+//LED display logic and demostrate its function by reading in sensor data
+//in real time from the arduino sensors. The results are displayed on 
+//a software simulated display as well as a hardware display. The 
+//hardware diplay is connected to the computer using a FT232H interface 
+//board controlling a hardware LED matrix through a I2C interface.
+
 #include <wx/wxprec.h>
 #include <wx/timer.h>
 #include <attitude_indicator.h>
@@ -10,31 +19,39 @@ using std::string;
 #include <wx/wx.h>
 #endif
 
+//Define Visual Studio version for backwards compatablity
 #define _MSC_VER 1924
-
-
-
+//Define the size of the LED squares
 #define SIZE     100
 int TIME = 80; //Time in milliseconds between data updates
 
+//Define MyCanvas class that handles the drawing of shapes within the frame
 class MyCanvas : public wxPanel
 {
 public:
+    //MyCanvas public methods
     MyCanvas(wxFrame* parent, int x_in, int y_in, const wxPoint& pos,
               const wxSize& size, LED_Matrix *panelDisplayPtr);
     void OnPaint(wxPaintEvent& event);
     void KeyDown(wxKeyEvent& event);
     void OnTimer(wxTimerEvent& event);
 private:
+    //Private variables
     wxTimer timer;
     int x, y, ledDim;
     float roll, pitch, yaw;
+    //data_reader object reads in data sent from arduino sensors
     data_reader sensorData;
+    //LED_Matrix object controls the hardware matrix display
     LED_Matrix panelDisplay;
+    //Attitude indicator object controls attitude indicator logic
     attitude_indicator ai;
+    //Declare event table to handle all relavent events
     DECLARE_EVENT_TABLE()
 };
 
+//Define default constructor. Initializes attitude indicator,
+//hardware LED matrix, and data reader
 MyCanvas::MyCanvas(wxFrame* parent, int x_in, int y_in, const wxPoint& pos,
                     const wxSize& size, LED_Matrix *panelDisplayPtr) 
     : wxPanel(parent, -1, pos, size), timer(this, -1)
@@ -51,10 +68,16 @@ MyCanvas::MyCanvas(wxFrame* parent, int x_in, int y_in, const wxPoint& pos,
     timer.Start(TIME);
 }
 
+//Controls the logic for a keyboard input
 void MyCanvas::KeyDown(wxKeyEvent& event)
 {  
     char key = event.GetUnicodeKey();
 
+   //Pitch up   if key = W
+   //Pitch down if key = S
+   //Roll left  if key = Q
+   //Roll right if key = E
+   //Reset/calibrate display if key = X
     switch (key)
     {
     case 'W': 
@@ -73,19 +96,26 @@ void MyCanvas::KeyDown(wxKeyEvent& event)
         ai.calibrate();
         break;
     }
-    
+    //Force the MyCanvas to redraw and the MyFrame to update
     Refresh();
     Update();
 
 }
 
+//Reads in a set of data and determines
+//if the attitude indicator display logic
+//should change.
 void MyCanvas::OnTimer(wxTimerEvent& event)
     
 {
-    float degreesRoll, degreesPitch;
+    //Declare Variables
+    //Sensitivity controls the amount of degree change
+    //needed to trigger a change in the attitude indicator
     double pitchSensitivity = 6;
-    double rollSensitivity  = 6;
+    double rollSensitivity = 6;
+    float degreesRoll, degreesPitch;
     sensorData.read(&roll, &pitch, &yaw);
+    //Only proceed if the data is nonzero
     if (!roll == 0 || !pitch == 0)
     {
         degreesRoll = roll * TIME/1000;
@@ -109,16 +139,24 @@ void MyCanvas::OnTimer(wxTimerEvent& event)
         }
         
     }
+    //Force the MyCanvas to redraw and the MyFrame to update
     Refresh();
     Update();
 }
 
+//Define logic during paint event and
+//draws every pixel of display with color
+//determined by attitude indicator logic
 void MyCanvas::OnPaint(wxPaintEvent& event)
 {
     wxPaintDC dc(this);
+    //Pen controls the square border color
+    //Brush controls the square fill color
     dc.SetPen(*wxBLACK);
     bool flag;
     int i, j;
+    //Draws every pixel the color determined by the attitude indicator object
+    //Draws for both the software and hardware displays
     for (i = 0; i < ledDim; i++)
     {
         for (j = 0; j < ledDim; j++)
@@ -133,62 +171,86 @@ void MyCanvas::OnPaint(wxPaintEvent& event)
                 flag = false;
                 dc.SetBrush(*wxRED);
             }
+            //Software display
             dc.DrawRectangle(SIZE*j, SIZE *i, SIZE, SIZE);
+            //Hardware display
             panelDisplay.checkPixel(flag, i, j);
         }
     }
 }
 
-
+//Event table
 BEGIN_EVENT_TABLE(MyCanvas, wxPanel)
+//Paint event
 EVT_PAINT  (MyCanvas::OnPaint)
+//Keyboard character input
 EVT_KEY_DOWN   (MyCanvas::KeyDown)
+//Timer event that triggers data updates
 EVT_TIMER(-1, MyCanvas::OnTimer)
 END_EVENT_TABLE()
 
+//Define the MyFrame class that displays the frame in which the drawing occurs
 class MyFrame : public wxFrame
 {
 public:
-    MyFrame(const wxString& title, const wxPoint& pos, const wxSize& size, LED_Matrix *frameDisplayPtr);
+    //Constructor
+    MyFrame(const wxString& title, const wxPoint& pos, const wxSize& size, LED_Matrix* frameDisplayPtr);
+    //Method that occurs when frame is closed by user
     void OnClose(wxCloseEvent& event);
 
 private:
+    //LED_Matrix object controls the hardware matrix display
     LED_Matrix frameDisplay;
+    //Event table
     DECLARE_EVENT_TABLE()
 };
 
-MyFrame::MyFrame(const wxString& title, const wxPoint& pos, const wxSize& size, LED_Matrix *frameDisplayPtr)
+//Define default constructor, sets LED_Matrix object
+MyFrame::MyFrame(const wxString& title, const wxPoint& pos, const wxSize& size, LED_Matrix* frameDisplayPtr)
     : wxFrame(NULL, -1, title, pos, size, wxDEFAULT_FRAME_STYLE, wxT("1"))
 {
     frameDisplay = *frameDisplayPtr;
 }
 
+//Controls logic for shutting down hardware LED matrix and
+//destroying the displayed frame when the user closes the app
 void MyFrame::OnClose(wxCloseEvent& event)
 {
     frameDisplay.FT_Close();
     Destroy();
 }
 
+//Event table
 BEGIN_EVENT_TABLE(MyFrame, wxFrame)
-EVT_CLOSE (MyFrame::OnClose)
+//Close event
+EVT_CLOSE(MyFrame::OnClose)
 END_EVENT_TABLE()
 
+//Define the MyApp class that handles the logic initializing and ending the frame and canvas objects
 class MyApp : public wxApp
 {
 public:
+    //Initialization method
     virtual bool OnInit();
 private:
+    //MyApp contains frame, canvas, and LED_Matrix objects
+    //Both MyFrame and MyCanvas objects manipulate the same
+    //LED_Matrix object
     MyFrame* frame;
     MyCanvas* canvas1;
     LED_Matrix display;
 };
 
+//Event occurs at program startup to initizailze MyApp object
 wxIMPLEMENT_APP(MyApp);
 
+//Initializes the program
 bool MyApp::OnInit()
 {
-    frame = new MyFrame(wxT("LED Array"), wxPoint(), wxSize(2500,1800), &display);
-    canvas1 = new MyCanvas(frame, 10, 10, wxPoint(0,0), wxSize(2500, 1800), &display);
+    //Create new MyFrame and MyCanvas objects
+    frame = new MyFrame(wxT("LED Array"), wxPoint(), wxSize(2500, 1800), &display);
+    canvas1 = new MyCanvas(frame, 10, 10, wxPoint(0, 0), wxSize(2500, 1800), &display);
+    //Display frame
     frame->Show(true);
     return true;
 }

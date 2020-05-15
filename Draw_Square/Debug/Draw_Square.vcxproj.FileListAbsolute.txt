@@ -1,0 +1,2 @@
+C:\Users\tilt7\Documents\GitHub\microcontroller\Draw_Square\Debug\Draw_Square.exe
+C:\Users\tilt7\Documents\GitHub\microcontroller\Draw_Square\Debug\Draw_Square.pdb

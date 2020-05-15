@@ -1,5 +1,5 @@
 #pragma once
-
+//Method and variable definitions for attitude indicator object
 class attitude_indicator
 {
 public:
@@ -22,6 +22,5 @@ private:
 	bool detectGreen(int x, int y);
 	bool detectRed(int x, int y);
 
-	
 };
 
