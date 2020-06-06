@@ -3,7 +3,6 @@
 #include <Arduino_HTS221.h>   //Humidity & Temperature Sensor
 #include <Arduino_APDS9960.h> //Gesture, Light, Proximity Sensors
 #include <MadgwickAHRS.h>
-#include <SensorFusion.h>
 
 unsigned long timer;
 Madgwick filter;
@@ -60,21 +59,28 @@ void loop() {
     z_dis = 0;
     unsigned long begin_time, time_diff;
 
-
-    while ((seconds >= (millis() % 60000) / 1000)) {  //break every second
+    //breaks every second 
+    while ((seconds >= ((millis() % 60000) / 1000))) {  //break every second
       begin_time = millis();
       IMU.readAcceleration(tempx, tempy, tempz);
       IMU.readGyroscope(temproll, temppitch, tempyaw);
       //IMU.readMagneticField(mag_x, mag_y, mag_z);
-      time_diff = (millis() - begin_time);
 
-      //Madgwick Filter
+      //Madgwick Filter, need to look into it 
       filter.updateIMU(-temproll, temppitch, tempyaw, tempx, tempy, tempz);
-
 
       roll = (int)filter.getRoll();
       pitch = (int)filter.getPitch();
       yaw = (int)filter.getYaw();
+      time_diff = (millis() - begin_time);
+
+      //serial port output orientation of the device at real time
+//      Serial.print("Orientation: ");
+//      Serial.print(yaw);
+//      Serial.print(" ");
+//      Serial.print(pitch);
+//      Serial.print(" ");
+//      Serial.println(roll);
 
       //calculate the gravity function  -- need improvements
       grav_x = sin(pitch * PI / 180.0) ;
@@ -86,7 +92,7 @@ void loop() {
         grav_z = 1 - abs(grav_x);
       }
 
-
+      // average acceleration 
       x_accel = (x_accel + abs(tempx) - abs(grav_x)) / 2;
       y_accel = (y_accel + abs(tempy) - abs(grav_y)) / 2;
       z_accel = (z_accel + abs(tempz) - abs(grav_z)) / 2;
@@ -96,15 +102,15 @@ void loop() {
       //      Serial.println("Gravity: " + String(grav_x) + String(" ") + String(grav_y) + String(" ") + String(grav_z));
       //      Serial.println("Acceleration: " + String(x_accel) + String(" ") + String(y_accel) + String(" ") + String(z_accel));
 
-      //calculation for displacement
-      x_dis = time_diff * 0.001 * x_vel + x_accel * 9.8 * sq(time_diff * 0.001) / 2;
-      y_dis = time_diff * 0.001 * y_vel + y_accel * 9.8 * sq(time_diff * 0.001) / 2;
-      z_dis = time_diff * 0.001 * z_vel + z_accel * 9.8 * sq(time_diff * 0.001) / 2;
+      //calculation for displacement, not very accurate 
+      x_dis = x_dis+time_diff * 0.001 * x_vel + x_accel * 9.8 * sq(time_diff * 0.001) / 2;
+      y_dis = y_dis+time_diff * 0.001 * y_vel + y_accel * 9.8 * sq(time_diff * 0.001) / 2;
+      z_dis = z_dis+time_diff * 0.001 * z_vel + z_accel * 9.8 * sq(time_diff * 0.001) / 2;
       x_vel = x_vel + time_diff * 0.001 * x_accel * 9.8;
       y_vel = y_vel + time_diff * 0.001 * y_accel * 9.8;
       z_vel = z_vel + time_diff * 0.001 * z_accel * 9.8;
 
-     //reset after 1 minuet
+      //reset after 1 minuet
       if (seconds == 59) {
         seconds = 0;
       }
@@ -112,7 +118,7 @@ void loop() {
 
     //serail port display calculated displaced.
     Serial.println(String(x_dis) + String(" ") + String(y_dis) + String(" ") + String(z_dis));
-
+    
     //    //temperature
     //    float temperature = HTS.readTemperature();
     //    Serial.print("Temperature = ");
