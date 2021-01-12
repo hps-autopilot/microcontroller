@@ -1,2 +1,0 @@
-C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Sensor_LED_Matrix\Debug\Attitude_Indicator_Sensor_LED_Matrix.exe
-C:\Users\tilt7\Documents\GitHub\microcontroller\Attitude_Indicator_Sensor_LED_Matrix\Debug\Attitude_Indicator_Sensor_LED_Matrix.pdb

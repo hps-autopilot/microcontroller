@@ -1,2 +1,0 @@
-C:\Users\tilt7\Documents\GitHub\microcontroller\Single_LED\Debug\Single_LED.exe
-C:\Users\tilt7\Documents\GitHub\microcontroller\Single_LED\Debug\Single_LED.pdb
