@@ -1,0 +1,162 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\tilt7\\Documents\\GitHub\\microcontroller\\BluetoothLEExplorer\\BluetoothLEExplorer\\BluetoothLEExplorerUnitTests\\BluetoothLEExplorerUnitTests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\tilt7\\Documents\\GitHub\\microcontroller\\BluetoothLEExplorer\\BluetoothLEExplorer\\BluetoothLEExplorerUnitTests\\BluetoothLEExplorerUnitTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tilt7\\Documents\\GitHub\\microcontroller\\BluetoothLEExplorer\\BluetoothLEExplorer\\BluetoothLEExplorerUnitTests\\BluetoothLEExplorerUnitTests.csproj",
+        "projectName": "BluetoothLEExplorerUnitTests",
+        "projectPath": "C:\\Users\\tilt7\\Documents\\GitHub\\microcontroller\\BluetoothLEExplorer\\BluetoothLEExplorer\\BluetoothLEExplorerUnitTests\\BluetoothLEExplorerUnitTests.csproj",
+        "packagesPath": "C:\\Users\\tilt7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tilt7\\Documents\\GitHub\\microcontroller\\BluetoothLEExplorer\\BluetoothLEExplorer\\BluetoothLEExplorerUnitTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\tilt7\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "uap10.0.18362"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "uap10.0.18362": {
+            "projectReferences": {
+              "C:\\Users\\tilt7\\Documents\\GitHub\\microcontroller\\BluetoothLEExplorer\\BluetoothLEExplorer\\GattHelper\\GattHelper.csproj": {
+                "projectPath": "C:\\Users\\tilt7\\Documents\\GitHub\\microcontroller\\BluetoothLEExplorer\\BluetoothLEExplorer\\GattHelper\\GattHelper.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "uap10.0.18362": {
+          "dependencies": {
+            "MSTest.TestAdapter": {
+              "target": "Package",
+              "version": "[1.1.17, )"
+            },
+            "MSTest.TestFramework": {
+              "target": "Package",
+              "version": "[1.1.17, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.0.1, )"
+            },
+            "Microsoft.NETCore.UniversalWindowsPlatform": {
+              "target": "Package",
+              "version": "[5.3.3, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win10-arm": {
+          "#import": []
+        },
+        "win10-arm-aot": {
+          "#import": []
+        },
+        "win10-arm64-aot": {
+          "#import": []
+        },
+        "win10-x64": {
+          "#import": []
+        },
+        "win10-x64-aot": {
+          "#import": []
+        },
+        "win10-x86": {
+          "#import": []
+        },
+        "win10-x86-aot": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\Users\\tilt7\\Documents\\GitHub\\microcontroller\\BluetoothLEExplorer\\BluetoothLEExplorer\\GattHelper\\GattHelper.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\tilt7\\Documents\\GitHub\\microcontroller\\BluetoothLEExplorer\\BluetoothLEExplorer\\GattHelper\\GattHelper.csproj",
+        "projectName": "GattHelper",
+        "projectPath": "C:\\Users\\tilt7\\Documents\\GitHub\\microcontroller\\BluetoothLEExplorer\\BluetoothLEExplorer\\GattHelper\\GattHelper.csproj",
+        "packagesPath": "C:\\Users\\tilt7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tilt7\\Documents\\GitHub\\microcontroller\\BluetoothLEExplorer\\BluetoothLEExplorer\\GattHelper\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\tilt7\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "uap10.0.18362"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "uap10.0.18362": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "uap10.0.18362": {
+          "dependencies": {
+            "Microsoft.NETCore.UniversalWindowsPlatform": {
+              "target": "Package",
+              "version": "[5.3.3, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win10-arm": {
+          "#import": []
+        },
+        "win10-arm-aot": {
+          "#import": []
+        },
+        "win10-arm64-aot": {
+          "#import": []
+        },
+        "win10-x64": {
+          "#import": []
+        },
+        "win10-x64-aot": {
+          "#import": []
+        },
+        "win10-x86": {
+          "#import": []
+        },
+        "win10-x86-aot": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

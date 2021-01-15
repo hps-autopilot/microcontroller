@@ -1,0 +1,8 @@
+WinMetadata\Windows.winmd
+Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+Assets\SplashScreen.scale-200.png
+Properties\UnitTestApp.rd.xml
+BluetoothLEExplorerUnitTests.xr.xml
+UnitTestApp.xbf

@@ -1,0 +1,2 @@
+"/t:Microsoft.VisualStudio.TestPlatform.ObjectModel.CustomKeyValueConverter+TraitObject[],Microsoft.VisualStudio.TestPlatform.ObjectModel,json"
+"/t:System.String[],System.Runtime,json"

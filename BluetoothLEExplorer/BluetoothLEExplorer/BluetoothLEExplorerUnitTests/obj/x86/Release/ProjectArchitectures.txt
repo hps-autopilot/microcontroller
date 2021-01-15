@@ -1,0 +1,2 @@
+C:\Users\tilt7\Documents\GitHub\BluetoothLEExplorer\BluetoothLEExplorer\BluetoothLEExplorerUnitTests\BluetoothLEExplorerUnitTests.csproj;x86
+C:\Users\tilt7\Documents\GitHub\BluetoothLEExplorer\BluetoothLEExplorer\GattHelper\GattHelper.csproj;x86
