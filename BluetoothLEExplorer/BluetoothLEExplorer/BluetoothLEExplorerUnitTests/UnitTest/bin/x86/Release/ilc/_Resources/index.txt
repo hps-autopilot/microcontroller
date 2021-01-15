@@ -1,0 +1,17 @@
+Microsoft.TestPlatform.CommunicationUtilities, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  Microsoft.VisualStudio.TestPlatform.CommunicationUtilities.Resources.Resources.resources
+Microsoft.TestPlatform.CoreUtilities, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  Microsoft.VisualStudio.TestPlatform.CoreUtilities.Resources.Resources.resources
+Microsoft.TestPlatform.CrossPlatEngine, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  Microsoft.VisualStudio.TestPlatform.CrossPlatEngine.Resources.Resources.resources
+Microsoft.TestPlatform.Utilities, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  Microsoft.VisualStudio.TestPlatform.Utilities.Resources.Resources.resources
+Microsoft.VisualStudio.TestPlatform.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  Microsoft.VisualStudio.TestPlatform.Common.Resources.Resources.resources
+Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.Resources.Resource.resources
+Microsoft.VisualStudio.TestPlatform.ObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources.Resources.resources
+  Microsoft.VisualStudio.TestPlatform.ObjectModel.Resources.CommonResources.resources
+Microsoft.VisualStudio.TestPlatform.TestFramework, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  Microsoft.VisualStudio.TestTools.UnitTesting.Resources.FrameworkMessages.resources

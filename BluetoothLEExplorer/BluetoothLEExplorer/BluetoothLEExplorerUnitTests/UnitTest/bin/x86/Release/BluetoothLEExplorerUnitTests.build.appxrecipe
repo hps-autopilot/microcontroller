@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>DESKTOP-KBRKMNF</Machine>
+    <WindowsUser>tilt7</WindowsUser>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetOsVersion>10.0</TargetOsVersion>
+    <TargetOsDescription>Windows 10.0</TargetOsDescription>
+    <SolutionConfiguration>Release|x86</SolutionConfiguration>
+    <PackageArchitecture>x86</PackageArchitecture>
+    <PackageIdentityName>9f6d1caa-64c3-4d5e-9b27-4d2a2a02d502</PackageIdentityName>
+    <PackageIdentityPublisher>CN=stfro</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\Users\tilt7\Documents\GitHub\BluetoothLEExplorer\BluetoothLEExplorer\BluetoothLEExplorerUnitTests\obj\x86\Release\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+    <DeployOptionalPackages>false</DeployOptionalPackages>
+    <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
+    <LayoutDir>C:\Users\tilt7\Documents\GitHub\BluetoothLEExplorer\BluetoothLEExplorer\BluetoothLEExplorerUnitTests\UnitTest\bin\x86\Release\AppX</LayoutDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\tilt7\Documents\GitHub\BluetoothLEExplorer\BluetoothLEExplorer\BluetoothLEExplorerUnitTests\UnitTest\bin\x86\Release\ilc\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\tilt7\Documents\GitHub\BluetoothLEExplorer\BluetoothLEExplorer\BluetoothLEExplorerUnitTests\UnitTest\bin\x86\Release\ilc\Assets\SplashScreen.scale-200.png">
+      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tilt7\Documents\GitHub\BluetoothLEExplorer\BluetoothLEExplorer\BluetoothLEExplorerUnitTests\UnitTest\bin\x86\Release\ilc\BluetoothLEExplorerUnitTests.dll">
+      <PackagePath>BluetoothLEExplorerUnitTests.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tilt7\Documents\GitHub\BluetoothLEExplorer\BluetoothLEExplorer\BluetoothLEExplorerUnitTests\UnitTest\bin\x86\Release\ilc\BluetoothLEExplorerUnitTests.exe">
+      <PackagePath>BluetoothLEExplorerUnitTests.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tilt7\Documents\GitHub\BluetoothLEExplorer\BluetoothLEExplorer\BluetoothLEExplorerUnitTests\UnitTest\bin\x86\Release\ilc\BluetoothLEExplorerUnitTests.pdb">
+      <PackagePath>BluetoothLEExplorerUnitTests.pdb</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tilt7\Documents\GitHub\BluetoothLEExplorer\BluetoothLEExplorer\BluetoothLEExplorerUnitTests\UnitTest\bin\x86\Release\ilc\clrcompression.dll">
+      <PackagePath>clrcompression.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tilt7\Documents\GitHub\BluetoothLEExplorer\BluetoothLEExplorer\BluetoothLEExplorerUnitTests\UnitTest\bin\x86\Release\ilc\msdia140.dll">
+      <PackagePath>msdia140.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tilt7\Documents\GitHub\BluetoothLEExplorer\BluetoothLEExplorer\BluetoothLEExplorerUnitTests\UnitTest\bin\x86\Release\ilc\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tilt7\Documents\GitHub\BluetoothLEExplorer\BluetoothLEExplorer\BluetoothLEExplorerUnitTests\UnitTest\bin\x86\Release\ilc\_Resources\0.rsrc">
+      <PackagePath>_Resources\0.rsrc</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tilt7\Documents\GitHub\BluetoothLEExplorer\BluetoothLEExplorer\BluetoothLEExplorerUnitTests\UnitTest\bin\x86\Release\ilc\_Resources\1.rsrc">
+      <PackagePath>_Resources\1.rsrc</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tilt7\Documents\GitHub\BluetoothLEExplorer\BluetoothLEExplorer\BluetoothLEExplorerUnitTests\UnitTest\bin\x86\Release\ilc\_Resources\2.rsrc">
+      <PackagePath>_Resources\2.rsrc</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tilt7\Documents\GitHub\BluetoothLEExplorer\BluetoothLEExplorer\BluetoothLEExplorerUnitTests\UnitTest\bin\x86\Release\ilc\_Resources\3.rsrc">
+      <PackagePath>_Resources\3.rsrc</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tilt7\Documents\GitHub\BluetoothLEExplorer\BluetoothLEExplorer\BluetoothLEExplorerUnitTests\UnitTest\bin\x86\Release\ilc\_Resources\4.rsrc">
+      <PackagePath>_Resources\4.rsrc</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tilt7\Documents\GitHub\BluetoothLEExplorer\BluetoothLEExplorer\BluetoothLEExplorerUnitTests\UnitTest\bin\x86\Release\ilc\_Resources\5.rsrc">
+      <PackagePath>_Resources\5.rsrc</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tilt7\Documents\GitHub\BluetoothLEExplorer\BluetoothLEExplorer\BluetoothLEExplorerUnitTests\UnitTest\bin\x86\Release\ilc\_Resources\6.rsrc">
+      <PackagePath>_Resources\6.rsrc</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tilt7\Documents\GitHub\BluetoothLEExplorer\BluetoothLEExplorer\BluetoothLEExplorerUnitTests\UnitTest\bin\x86\Release\ilc\_Resources\7.rsrc">
+      <PackagePath>_Resources\7.rsrc</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tilt7\Documents\GitHub\BluetoothLEExplorer\BluetoothLEExplorer\BluetoothLEExplorerUnitTests\UnitTest\bin\x86\Release\ilc\_Resources\8.rsrc">
+      <PackagePath>_Resources\8.rsrc</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\tilt7\Documents\GitHub\BluetoothLEExplorer\BluetoothLEExplorer\BluetoothLEExplorerUnitTests\UnitTest\bin\x86\Release\ilc\_Resources\index.txt">
+      <PackagePath>_Resources\index.txt</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Users\tilt7\.nuget\packages\microsoft.net.native.sharedlibrary-x86\1.6.1\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.6.appx">
+      <Name>Microsoft.NET.Native.Framework.1.6</Name>
+      <Version>1.6.24903.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.1.6, MinVersion = 1.6.24903.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\tilt7\.nuget\packages\microsoft.net.native.sharedlibrary-x86\1.6.1\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.6.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\tilt7\.nuget\packages\microsoft.net.native.sharedlibrary-x64\1.6.1\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.6.appx">
+      <Name>Microsoft.NET.Native.Framework.1.6</Name>
+      <Version>1.6.24903.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.1.6, MinVersion = 1.6.24903.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\tilt7\.nuget\packages\microsoft.net.native.sharedlibrary-x64\1.6.1\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.6.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\tilt7\.nuget\packages\microsoft.net.native.sharedlibrary-arm\1.6.1\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.6.appx">
+      <Name>Microsoft.NET.Native.Framework.1.6</Name>
+      <Version>1.6.24903.0</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Framework.1.6, MinVersion = 1.6.24903.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\tilt7\.nuget\packages\microsoft.net.native.sharedlibrary-arm\1.6.1\build\..\tools\SharedLibrary\ret\Native\Microsoft.NET.Native.Framework.1.6.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\tilt7\.nuget\packages\microsoft.net.native.compiler\1.6.2\build\..\tools\Runtime\x86\Microsoft.NET.Native.Runtime.1.6.appx">
+      <Name>Microsoft.NET.Native.Runtime.1.6</Name>
+      <Version>1.6.24903.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.1.6, MinVersion = 1.6.24903.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\tilt7\.nuget\packages\microsoft.net.native.compiler\1.6.2\build\..\tools\Runtime\x86\Microsoft.NET.Native.Runtime.1.6.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\tilt7\.nuget\packages\microsoft.net.native.compiler\1.6.2\build\..\tools\Runtime\x64\Microsoft.NET.Native.Runtime.1.6.appx">
+      <Name>Microsoft.NET.Native.Runtime.1.6</Name>
+      <Version>1.6.24903.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.1.6, MinVersion = 1.6.24903.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\tilt7\.nuget\packages\microsoft.net.native.compiler\1.6.2\build\..\tools\Runtime\x64\Microsoft.NET.Native.Runtime.1.6.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Users\tilt7\.nuget\packages\microsoft.net.native.compiler\1.6.2\build\..\tools\Runtime\arm\Microsoft.NET.Native.Runtime.1.6.appx">
+      <Name>Microsoft.NET.Native.Runtime.1.6</Name>
+      <Version>1.6.24903.0</Version>
+      <Architecture>arm</Architecture>
+      <FrameworkIdentity>Name = Microsoft.NET.Native.Runtime.1.6, MinVersion = 1.6.24903.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Users\tilt7\.nuget\packages\microsoft.net.native.compiler\1.6.2\build\..\tools\Runtime\arm\Microsoft.NET.Native.Runtime.1.6.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.27810.0</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\ARM\Microsoft.VCLibs.ARM.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.27810.0</Version>
+      <Architecture>ARM64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\ARM64\Microsoft.VCLibs.ARM64.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.27810.0</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x64\Microsoft.VCLibs.x64.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
+      <Name>Microsoft.VCLibs.140.00</Name>
+      <Version>14.0.27810.0</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.140.00, MinVersion = 14.0.27810.0, Publisher = %27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\.\AppX\Retail\x86\Microsoft.VCLibs.x86.14.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>
