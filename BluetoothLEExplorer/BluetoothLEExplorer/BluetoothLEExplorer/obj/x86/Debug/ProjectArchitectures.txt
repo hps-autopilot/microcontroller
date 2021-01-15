@@ -1,0 +1,5 @@
+C:\Users\tilt7\Documents\GitHub\microcontroller\BluetoothLEExplorer\BluetoothLEExplorer\BluetoothLEExplorer\BluetoothLEExplorer.csproj;x86
+C:\Users\tilt7\Documents\GitHub\microcontroller\BluetoothLEExplorer\BluetoothLEExplorer\GattHelper\GattHelper.csproj;x86
+C:\Users\tilt7\Documents\GitHub\microcontroller\BluetoothLEExplorer\BluetoothLEExplorer\GattHelper\GattHelper.csproj;x86
+C:\Users\tilt7\Documents\GitHub\microcontroller\BluetoothLEExplorer\GattServicesLibrary\GattServicesLibrary\GattServicesLibrary.csproj;x86
+C:\Users\tilt7\Documents\GitHub\microcontroller\BluetoothLEExplorer\SortedObservableCollection\SortedObservableCollection\SortedObservableCollection.csproj;x86
